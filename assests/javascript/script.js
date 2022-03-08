@@ -16,7 +16,7 @@ var updateTime = function () {
 	$(".row").each(function () {
 		checkTime = $(this).attr("id");
 		checkTime = parseInt(checkTime);
-		console.log(`checkTime: ${checkTime}`); 
+		console.log(`checkTime: ${checkTime}`);
 		if (currentTime > checkTime) {
 			$(`#scheduleText${checkTime}`).addClass("past");
 		} else if (currentTime === checkTime) {
